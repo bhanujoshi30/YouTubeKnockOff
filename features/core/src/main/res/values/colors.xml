@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="toolbar">@color/black</color>
+    <color name="statusbar_color">@color/black</color>
+    <color name="white">#ffffff</color>
+    <!-- Primary brand color. -->
+    <color name="colorPrimary">#FB0303</color>
+    <color name="colorPrimaryVariant">#FFFFFF</color>
+    <color name="colorOnPrimary">#1059E4</color>
+    <color name="colorSecondary">#FFD709</color>
+    <color name="colorSecondaryVariant">#8C8506</color>
+    <color name="colorOnSecondary">#26FA0E</color>
+
+</resources>
