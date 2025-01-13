@@ -1,4 +1,4 @@
-package avinash.app.commonui.mainplayer
+package comui.app.commonui.mainplayer
 
 import com.google.gson.Gson
 import kotlinx.coroutines.delay

@@ -1,19 +1,8 @@
 package store.app.home.ui.home.player
 
-import android.net.Uri
 import android.view.ViewGroup
 import androidx.compose.ui.platform.ComposeView
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.viewinterop.AndroidView
-import androidx.media3.common.MediaItem
-import androidx.media3.common.util.UnstableApi
-import androidx.media3.exoplayer.ExoPlayer
-import androidx.media3.ui.AspectRatioFrameLayout
-import androidx.media3.ui.PlayerView
 import androidx.recyclerview.widget.RecyclerView
-import store.app.core.player.itemVideoPlayer
-import store.app.core.utils.toDp
 
 class SuggestedVideoAdapter(val onclick:()->Unit) : RecyclerView.Adapter<SuggestedVideoAdapter.MyVH>() {
 
@@ -39,4 +28,6 @@ class SuggestedVideoAdapter(val onclick:()->Unit) : RecyclerView.Adapter<Suggest
     override fun onBindViewHolder(holder: MyVH, position: Int) {
         holder.onBind(position)
     }
+
+
 }

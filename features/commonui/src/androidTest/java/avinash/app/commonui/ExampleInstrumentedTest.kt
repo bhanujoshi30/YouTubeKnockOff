@@ -1,1 +1,0 @@
-package avinash.app.commonui

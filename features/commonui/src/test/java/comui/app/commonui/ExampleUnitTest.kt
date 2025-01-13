@@ -1,4 +1,4 @@
-package avinash.app.commonui
+package comui.app.commonui
 
 import org.junit.Test
 

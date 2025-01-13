@@ -31,6 +31,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.6")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6")
     implementation("androidx.fragment:fragment-ktx:1.5.6")
+    implementation("androidx.test.ext:junit-ktx:1.2.1")
     installAndroidCore()
     installHilt()
     installCompose()
