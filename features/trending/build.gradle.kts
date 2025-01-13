@@ -24,6 +24,7 @@ android {
 
 dependencies {
     implementation(project(":features:core"))
+    implementation("androidx.test.ext:junit-ktx:1.2.1")
     installAndroidCore()
     installCoroutines()
     installHilt()

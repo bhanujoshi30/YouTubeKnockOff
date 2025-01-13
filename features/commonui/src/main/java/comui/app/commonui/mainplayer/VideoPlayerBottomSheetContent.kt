@@ -1,4 +1,4 @@
-package avinash.app.commonui.mainplayer
+package comui.app.commonui.mainplayer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -23,7 +23,7 @@ import kotlinx.coroutines.launch
 import store.app.core.models.ResponseWrapper
 import store.app.core.models.VideoDetailModel
 import store.app.core.player.GenerateVideoPlayerDetail
-import store.app.core.player.itemVideoPlayer
+import store.app.core.player.ItemVideoPlayer
 import store.app.core.player.SmallVideoPlayer
 import store.app.core.theme.MyAppTheme
 import store.app.core.utils.shimmerviews.addShimmerEffect
@@ -68,7 +68,7 @@ fun VideoPlayerBottomSheetContent(
                             if (it.isHeader)
                                 GenerateVideoPlayerDetail(context, it)
                             else
-                                itemVideoPlayer(it, context) { selectModel ->
+                                ItemVideoPlayer(it, context) { selectModel ->
                                     //viewModel.currentModel.value?.isHeader=false
                                     scope.launch {  lazyListState.scrollToItem(0)}
                                     selectedVideoModel.value = null

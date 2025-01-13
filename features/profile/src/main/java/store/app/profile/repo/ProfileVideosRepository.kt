@@ -1,12 +1,14 @@
-package store.app.home.ui.home.repo
+package store.app.profile.repo
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.flow
 import store.app.core.models.ResponseWrapper
+import store.app.core.models.VideoResponse
+import store.app.core.models.getVideoList
 import store.app.core.models.getVideoResponse
 import javax.inject.Inject
 
-class HomeVideosRepository @Inject constructor() {
+class ProfileVideosRepository @Inject constructor() {
     fun getHomeVideoList() = flow{
         emit(ResponseWrapper.Loading())
         delay(2000)

@@ -24,6 +24,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.test.ext:junit-ktx:1.2.1")
     installAndroidCore()
     installRetrofit()
     installGlide()

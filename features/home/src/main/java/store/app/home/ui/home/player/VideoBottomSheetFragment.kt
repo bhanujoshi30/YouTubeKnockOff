@@ -21,7 +21,7 @@ import kotlinx.coroutines.delay
 import store.app.core.base.BaseBottomSheetFragment
 import store.app.core.models.getVideoList
 import store.app.core.player.GenerateVideoPlayerDetail
-import store.app.core.player.itemVideoPlayer
+import store.app.core.player.ItemVideoPlayer
 import store.app.core.theme.MyAppTheme
 import store.app.core.utils.shimmerviews.addShimmerEffect
 import store.app.core.utils.setBottomSheetScrollBehaviour
@@ -83,7 +83,7 @@ class VideoBottomSheetFragment : BaseBottomSheetFragment() {
                                 if (it.isHeader)
                                     GenerateVideoPlayerDetail(context, currentModel)
                                 else
-                                    itemVideoPlayer(it, context) { selectModel ->
+                                    ItemVideoPlayer(it, context) { selectModel ->
                                         isLoading = true
                                         currentModel.isHeader = false
                                         selectModel.isHeader = true

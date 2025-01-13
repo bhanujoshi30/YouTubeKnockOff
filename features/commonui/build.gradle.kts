@@ -26,6 +26,7 @@ kapt {
 dependencies {
     implementation(project(":features:core"))
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6")
+    testImplementation("org.testng:testng:6.9.6")
     installCompose()
     installHilt()
     installComposeNavigation()

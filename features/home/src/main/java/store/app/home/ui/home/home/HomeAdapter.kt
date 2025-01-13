@@ -1,12 +1,8 @@
 package store.app.home.ui.home.home
 
-import android.net.Uri
 import android.view.ViewGroup
 import androidx.compose.ui.platform.ComposeView
-import androidx.compose.ui.platform.LocalContext
 import androidx.recyclerview.widget.RecyclerView
-import store.app.core.player.itemVideoPlayer
-import store.app.core.utils.toDp
 
 class HomeAdapter(val onclick:()->Unit) : RecyclerView.Adapter<HomeAdapter.MyVH>() {
 

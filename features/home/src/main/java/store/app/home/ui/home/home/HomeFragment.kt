@@ -32,11 +32,11 @@ import androidx.compose.ui.zIndex
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import avinash.app.commonui.mainplayer.VideoPlayerBottomSheetContent
+import comui.app.commonui.mainplayer.VideoPlayerBottomSheetContent
 import store.app.core.models.ResponseWrapper
 import store.app.core.models.VideoDetailModel
 import store.app.core.models.getVideoList
-import store.app.core.player.itemVideoPlayer
+import store.app.core.player.ItemVideoPlayer
 import store.app.core.utils.attachComposeFragment
 import store.app.core.utils.shimmerviews.addShimmerEffect
 import store.app.core.utils.shimmerviews.videoPLayerListShimmerView
@@ -118,7 +118,7 @@ fun HomeScreen(navController: NavController) {
                 is ResponseWrapper.Success -> {
                     LazyColumn {
                         items(videoResponse.data.VideoDetailModel) {
-                            itemVideoPlayer(it, context, false) { currentModel ->
+                            ItemVideoPlayer(it, context, false) { currentModel ->
                                 selectedVideoModel = currentModel
                             }
                         }

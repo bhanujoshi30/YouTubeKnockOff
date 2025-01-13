@@ -1,4 +1,4 @@
-package avinash.app.commonui.mainplayer
+package comui.app.commonui.mainplayer
 
 import store.app.core.models.VideoDetailModel
 import javax.inject.Inject
